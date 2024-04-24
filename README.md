@@ -4,7 +4,7 @@ To train models, run `Python train.py --problem <problem> --localised <localised
 
 `<problem>` takes values `inpaint` or `ct`: 
 - If set to `inpaint`, the model is trained under the inpainting problem setting
-- Otherwise that of Sparse-view CT. Note that only algorithms (closures) 1, 2 and 6 has CT implementations (using astra-toolbox), but can only back-propagate the equivariance loss $\mathcal{L}_{EQ}$, due to incompatibility of astra-toolbox with PyTorch. Use the training script in repository [REI-CT]() for training models for CT tasks.
+- Otherwise that of Sparse-view CT. Note that only algorithms (closures) 1, 2 and 6 has CT implementations (using astra-toolbox), but can only back-propagate the equivariance loss $\mathcal{L}_{EQ}$, due to incompatibility of astra-toolbox with PyTorch. Use the training script in repository [REI-CT](https://github.com/ARegularAutomaton/REQFL-For-CT) for training models for CT tasks.
 
 `<localised>` takes values `true` or `false`: 
 This parameter is applicable only when the `<problem>` is set to `inpaint`. Defaulted to `false`.
